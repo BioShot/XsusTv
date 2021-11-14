@@ -1,0 +1,22 @@
+.header {
+    text-align: center;
+}
+.shows{
+    align-content: center;
+}
+.show_test{
+    align-content: center;
+    text-decoration: none;
+    color: black;
+    width: 150px;
+    height: 200px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.show_test_link{
+    text-decoration: none;
+    color: black;
+    width: 150px;
+    height: 200px;
+    align-content: center
+}
