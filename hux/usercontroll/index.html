@@ -9,12 +9,16 @@
 <body>
     <div id="content">
         <input type="text" placeholder="Sound Error" id="user-error">
+        <button id="search">search</button>
         <script>
             var eula = "[usereula:tags{onLoad:[showMessage:{title:'EULA',body:'<p>Please Agree to this eula.</p><br><button action='USEREULA_Agree'>Agree</button>',closeButton:False}]}]"
             document.eula = JSON.parse(eula)
             var errors = {}
             errors.sounderror = "0223x"
-            document.location.assign("bioshot.github.io/XsusTv/hux/usercontroll/errors"+errors[document.getElementById("user-error").value])
+            document.getElementById("search").onclick = function(){
+                document.location.assign("bioshot.github.io/XsusTv/hux/usercontroll/errors"+errors[document.getElementById("user-error").value])
+            }
+            
         </script>
     </div>
 </body>
