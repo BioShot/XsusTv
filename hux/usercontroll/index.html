@@ -9,6 +9,11 @@
 <body>
     <div id="content">
         <input type="text" placeholder="Sound Error" id="user-error">
+        <script>
+            var eula = "[usereula:tags{onLoad:[showMessage:{title:'EULA',body:'<p>Please Agree to this eula.</p><br><button action='USEREULA_Agree'>Agree</button>',closeButton:False}]}]"
+            document.eula = JSON.parse(eula)
+            console.log(document.eula)
+        </script>
     </div>
 </body>
 </html>
